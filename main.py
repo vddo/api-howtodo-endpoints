@@ -1,15 +1,10 @@
 from fastapi import FastAPI
-from pathlib import Path
 from pydantic import BaseModel
 import uuid
 import uvicorn
 
-db_file = Path("./db.json")
 app = FastAPI()
    
-if not db_file.exists():
-    with open(db_file)
-    
 users = [
     {"id": str(uuid.uuid4()), "username": "johndoe", "email": "john@mail.com"},
     {"id": str(uuid.uuid4()), "username": "pranav", "email": "pranav@mail.com"},
